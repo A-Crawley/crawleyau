@@ -6,7 +6,7 @@ const randomPosition = () => {
 };
 
 const randomTime = () => {
-  return Math.random() * 500;
+  return Math.random() * (width < 600 ? 3000 : 500);
 };
 
 const createDroplet = () => {
@@ -28,7 +28,7 @@ const container = document.querySelector("#container");
 
 setInterval(async () => {
   const droplets = document.querySelectorAll(".droplet");
-  if (droplets.length < 75) {
+  if (width < 600 ? droplets.length < 3 : droplets.length < 75) {
     setTimeout(() => {
       container.appendChild(createDroplet());
     }, randomTime());
