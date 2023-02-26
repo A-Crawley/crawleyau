@@ -1,3 +1,4 @@
+
 <script lang="ts">
     import Modal, {getModal} from './Modal.svelte';
     import Airtable from 'airtable';
