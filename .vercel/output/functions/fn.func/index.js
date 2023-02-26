@@ -481,20 +481,6 @@ var require_set_cookie = __commonJS({
   }
 });
 
-// .svelte-kit/output/server/entries/pages/_layout.js
-var layout_exports = {};
-__export(layout_exports, {
-  config: () => config
-});
-var config;
-var init_layout = __esm({
-  ".svelte-kit/output/server/entries/pages/_layout.js"() {
-    config = {
-      runtime: "edge"
-    };
-  }
-});
-
 // .svelte-kit/output/server/entries/fallbacks/layout.svelte.js
 var layout_svelte_exports = {};
 __export(layout_svelte_exports, {
@@ -518,19 +504,15 @@ __export(__exports, {
   fonts: () => fonts,
   imports: () => imports,
   index: () => index,
-  stylesheets: () => stylesheets,
-  universal: () => layout_exports,
-  universal_id: () => universal_id
+  stylesheets: () => stylesheets
 });
-var index, component, file, universal_id, imports, stylesheets, fonts;
+var index, component, file, imports, stylesheets, fonts;
 var init__ = __esm({
   ".svelte-kit/output/server/nodes/0.js"() {
-    init_layout();
     index = 0;
     component = async () => (await Promise.resolve().then(() => (init_layout_svelte(), layout_svelte_exports))).default;
     file = "_app/immutable/entry/layout.svelte.766b7557.js";
-    universal_id = "src/routes/+layout.js";
-    imports = ["_app/immutable/entry/layout.svelte.766b7557.js", "_app/immutable/chunks/index.5524d5a9.js", "_app/immutable/entry/_layout.js.967258a1.js", "_app/immutable/chunks/_layout.6eda8643.js"];
+    imports = ["_app/immutable/entry/layout.svelte.766b7557.js", "_app/immutable/chunks/index.5524d5a9.js"];
     stylesheets = [];
     fonts = [];
   }
@@ -589,10 +571,24 @@ var init__2 = __esm({
   ".svelte-kit/output/server/nodes/1.js"() {
     index2 = 1;
     component2 = async () => (await Promise.resolve().then(() => (init_error_svelte(), error_svelte_exports))).default;
-    file2 = "_app/immutable/entry/error.svelte.2e0e1e57.js";
-    imports2 = ["_app/immutable/entry/error.svelte.2e0e1e57.js", "_app/immutable/chunks/index.5524d5a9.js", "_app/immutable/chunks/singletons.741fad1d.js"];
+    file2 = "_app/immutable/entry/error.svelte.c6fdceb7.js";
+    imports2 = ["_app/immutable/entry/error.svelte.c6fdceb7.js", "_app/immutable/chunks/index.5524d5a9.js", "_app/immutable/chunks/singletons.2bc57e68.js"];
     stylesheets2 = [];
     fonts2 = [];
+  }
+});
+
+// .svelte-kit/output/server/entries/pages/_page.js
+var page_exports = {};
+__export(page_exports, {
+  config: () => config
+});
+var config;
+var init_page = __esm({
+  ".svelte-kit/output/server/entries/pages/_page.js"() {
+    config = {
+      runtime: "edge"
+    };
   }
 });
 
@@ -2810,15 +2806,19 @@ __export(__exports3, {
   fonts: () => fonts3,
   imports: () => imports3,
   index: () => index3,
-  stylesheets: () => stylesheets3
+  stylesheets: () => stylesheets3,
+  universal: () => page_exports,
+  universal_id: () => universal_id
 });
-var index3, component3, file3, imports3, stylesheets3, fonts3;
+var index3, component3, file3, universal_id, imports3, stylesheets3, fonts3;
 var init__3 = __esm({
   ".svelte-kit/output/server/nodes/2.js"() {
+    init_page();
     index3 = 2;
     component3 = async () => (await Promise.resolve().then(() => (init_page_svelte(), page_svelte_exports))).default;
-    file3 = "_app/immutable/entry/_page.svelte.5266b33a.js";
-    imports3 = ["_app/immutable/entry/_page.svelte.5266b33a.js", "_app/immutable/chunks/index.5524d5a9.js"];
+    file3 = "_app/immutable/entry/_page.svelte.68bce605.js";
+    universal_id = "src/routes/+page.js";
+    imports3 = ["_app/immutable/entry/_page.svelte.68bce605.js", "_app/immutable/chunks/index.5524d5a9.js", "_app/immutable/entry/_page.js.913151d5.js", "_app/immutable/chunks/_page.6eda8643.js"];
     stylesheets3 = ["_app/immutable/assets/_page.cc198eec.css"];
     fonts3 = [];
   }
@@ -3439,7 +3439,7 @@ var options = {
 		<div class="error">
 			<span class="status">` + status + '</span>\n			<div class="message">\n				<h1>' + message + "</h1>\n			</div>\n		</div>\n	</body>\n</html>\n"
   },
-  version_hash: "1hre2ls"
+  version_hash: "riezvf"
 };
 function get_hooks() {
   return {};
@@ -6212,7 +6212,7 @@ var manifest = {
   assets: /* @__PURE__ */ new Set(["favicon.png"]),
   mimeTypes: { ".png": "image/png" },
   _: {
-    client: { "start": { "file": "_app/immutable/entry/start.94442d88.js", "imports": ["_app/immutable/entry/start.94442d88.js", "_app/immutable/chunks/index.5524d5a9.js", "_app/immutable/chunks/singletons.741fad1d.js"], "stylesheets": [], "fonts": [] }, "app": { "file": "_app/immutable/entry/app.b5520632.js", "imports": ["_app/immutable/entry/app.b5520632.js", "_app/immutable/chunks/index.5524d5a9.js"], "stylesheets": [], "fonts": [] } },
+    client: { "start": { "file": "_app/immutable/entry/start.677b08a5.js", "imports": ["_app/immutable/entry/start.677b08a5.js", "_app/immutable/chunks/index.5524d5a9.js", "_app/immutable/chunks/singletons.2bc57e68.js"], "stylesheets": [], "fonts": [] }, "app": { "file": "_app/immutable/entry/app.f3205427.js", "imports": ["_app/immutable/entry/app.f3205427.js", "_app/immutable/chunks/index.5524d5a9.js"], "stylesheets": [], "fonts": [] } },
     nodes: [
       () => Promise.resolve().then(() => (init__(), __exports)),
       () => Promise.resolve().then(() => (init__2(), __exports2)),
