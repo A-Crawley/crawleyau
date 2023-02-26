@@ -1,7 +1,7 @@
 <script lang="ts">
     import Modal, {getModal} from './Modal.svelte';
     import Airtable from 'airtable';
-	import { env } from '$env/dynamic/public';
+    import { AirtableConfig } from '../config';
 
     let message :string | null = null;
     let email :string | null = null;
@@ -15,7 +15,7 @@
 
         if (email === null || message === null) return;
 
-        var base = new Airtable({apiKey: env.PUBLIC_AIRTABLE}).base(env.PUBLIC_BASE_ID);
+        var base = new Airtable({apiKey: AirtableConfig.apikey}).base(AirtableConfig.baseId);
         base('Table 1').create([
                 {
                     "fields": {
